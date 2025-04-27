@@ -5,9 +5,9 @@
 #define MIN 2
 
 typedef struct BTreeNode {
-    int keys[MAX + 1];
+    int keys;
     int count;
-    struct BTreeNode *children[MAX + 2];
+    struct BTreeNode *children[MAX + 1];
 } Node;
 
 Node *root = NULL;
